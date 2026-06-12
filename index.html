@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio professionnel de Samaké Amadou, développeur web spécialisé en front-end. Découvrez mes projets en HTML, CSS et JavaScript." />
+  <meta name="keywords" content="développeur web, front-end, HTML, CSS, JavaScript, portfolio, Côte d'Ivoire" />
+  <meta name="author" content="Samaké Amadou" />
+  <meta name="theme-color" content="#0F172A" />
+  <title>Samaké Amadou — Développeur Web | Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="entete">
+    <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Navigation principale">
+      <div class="container">
+        <a href="#hero" class="navbar-brand">
+          <img src="logo.samake.amadou.png" alt="Logo Samaké Amadou" class="logo-img">
+          <span class="brand-text">S.<span>Amadou</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-liens" aria-controls="nav-liens" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-liens">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#a-propos">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#outils">Outils</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-contenu">
+          <p class="hero-salutation">Bonjour, je suis</p>
+          <h1 class="hero-nom">Samaké Amadou</h1>
+          <p class="hero-titre">Étudiant en <span>Développement Web</span></p>
+          <p class="hero-description">
+            Passionné par la création d'interfaces web modernes et fonctionnelles.
+            Je construis des expériences numériques soignées, du code propre et des projets concrets.
+          </p>
+          <div class="hero-boutons">
+            <a href="#projets" class="btn btn-primaire">Voir mes projets</a>
+            <a href="#contact" class="btn btn-contour">Me contacter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="a-propos" class="section" aria-label="À propos de moi">
+      <div class="container">
+        <h2 class="section-titre">À propos</h2>
+        <div class="ligne-accent"></div>
+        <div class="a-propos-grille">
+          <div class="a-propos-image">
+            <picture>
+              <source type="image/webp" srcset="amadou_small.webp 600w, amadou.webp 1200w" sizes="(max-width: 768px) 600px, 1200px">
+              <img src="amadou.jpeg" alt="Samaké Amadou, développeur web" class="photo-profil" loading="lazy">
+            </picture>
+          </div>
+          <div class="a-propos-texte">
+            <p>Je suis Samaké Amadou, étudiant en développement web basé à Bonoua (Côte d'Ivoire). Motivé par la création de solutions numériques utiles et accessibles, j'apprends chaque jour à maîtriser les fondamentaux du web.</p>
+            <p>Mon parcours m'a permis de construire des bases solides en HTML, CSS et JavaScript. Je suis particulièrement attentif à la qualité du code, au design responsive et à l'expérience utilisateur.</p>
+            <p>Disponible pour des stages, collaborations ou projets freelance.</p>
+            <div class="a-propos-infos">
+              <div class="info-item">
+                <p class="label">Localisation</p>
+                <p class="valeur">Samo (Bonoua), Côte d'Ivoire</p>
+              </div>
+              <div class="info-item">
+                <p class="label">Statut</p>
+                <p class="valeur">Étudiant / Disponible</p>
+              </div>
+              <div class="info-item">
+                <p class="label">Spécialité</p>
+                <p class="valeur">Développement Web Front-end</p>
+              </div>
+              <div class="info-item">
+                <p class="label">Langues</p>
+                <p class="valeur">Français</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section" aria-label="Mes services">
+      <div class="container">
+        <h2 class="section-titre">Services</h2>
+        <p class="section-sous-titre">Ce que je peux apporter à vos projets</p>
+        <div class="ligne-accent"></div>
+        <div class="services-grille">
+          <article class="service-carte">
+            <div class="service-icone" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Développement de sites web</h3>
+            <p>Création de sites vitrines et de portfolios sur mesure, structurés en HTML5 sémantique et optimisés pour les moteurs de recherche.</p>
+          </article>
+          <article class="service-carte">
+            <div class="service-icone" aria-hidden="true"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3>Design responsive</h3>
+            <p>Interfaces adaptées à tous les écrans (mobile, tablette, ordinateur) grâce à une approche mobile-first et des mises en page flexibles.</p>
+          </article>
+          <article class="service-carte">
+            <div class="service-icone" aria-hidden="true"><i class="fa-solid fa-gears"></i></div>
+            <h3>Interactivité JavaScript</h3>
+            <p>Ajout de fonctionnalités dynamiques : formulaires, animations, intégration d'API et amélioration de l'expérience utilisateur.</p>
+          </article>
+          <article class="service-carte">
+            <div class="service-icone" aria-hidden="true"><i class="fa-solid fa-arrows-rotate"></i></div>
+            <h3>Maintenance et améliorations</h3>
+            <p>Mise à jour, correction et optimisation de sites existants pour garantir un code propre, performant et facile à maintenir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="competences" class="section" aria-label="Mes compétences">
+      <div class="container">
+        <h2 class="section-titre">Compétences</h2>
+        <p class="section-sous-titre">Les technologies que je maîtrise actuellement</p>
+        <div class="ligne-accent"></div>
+        <div class="competences-grille">
+          <article class="competence-carte">
+            <div class="competence-icone" aria-hidden="true"><i class="fa-brands fa-html5"></i></div>
+            <h3 class="competence-nom">HTML5</h3>
+            <p class="competence-desc">Structure sémantique, accessibilité, formulaires, balises modernes.</p>
+            <div class="barre-fond" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau HTML : 85%">
+              <div class="barre-remplissage" data-largeur="85%"></div>
+            </div>
+          </article>
+          <article class="competence-carte">
+            <div class="competence-icone" aria-hidden="true"><i class="fa-brands fa-css3-alt"></i></div>
+            <h3 class="competence-nom">CSS3</h3>
+            <p class="competence-desc">Flexbox, animations, responsive design, variables CSS, pseudo-éléments.</p>
+            <div class="barre-fond" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau CSS : 80%">
+              <div class="barre-remplissage" data-largeur="80%"></div>
+            </div>
+          </article>
+          <article class="competence-carte">
+            <div class="competence-icone" aria-hidden="true"><i class="fa-brands fa-js"></i></div>
+            <h3 class="competence-nom">JavaScript</h3>
+            <p class="competence-desc">Manipulation du DOM, événements, fetch API, logique applicative.</p>
+            <div class="barre-fond" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau JavaScript : 70%">
+              <div class="barre-remplissage" data-largeur="70%"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTILS ET ENVIRONNEMENT -->
+    <section id="outils" class="section" aria-label="Outils et environnement">
+      <div class="container">
+        <h2 class="section-titre">Outils et environnement</h2>
+        <p class="section-sous-titre">Ma boîte à outils pour un développement structuré, productif et maintenable.</p>
+        <div class="ligne-accent"></div>
+        <div class="outils-grille">
+          <article class="outil-carte">
+            <div class="outil-icone" aria-hidden="true"><i class="fa-brands fa-git-alt"></i></div>
+            <h3>Git</h3>
+            <p>Gestion de versions distribuée pour garder un historique propre, travailler en branches et déployer en toute confiance.</p>
+            <ul class="outil-details">
+              <li><strong>Bonnes pratiques :</strong> commits atomiques, branches fonctionnelles, révisions claires.</li>
+              <li><strong>Workflow :</strong> feature branches, merge requests et résolution de conflits structurée.</li>
+            </ul>
+          </article>
+          <article class="outil-carte">
+            <div class="outil-icone" aria-hidden="true"><i class="fa-brands fa-github"></i></div>
+            <h3>GitHub</h3>
+            <p>Plateforme de collaboration professionnelle pour partager du code, gérer des issues et organiser des workflows CI/CD.</p>
+            <ul class="outil-details">
+              <li><strong>Production :</strong> dépôts publics et privés, README de qualité, gestion de versions partagée.</li>
+              <li><strong>Automatisation :</strong> actions, déploiements continus et vérifications de code intégrées.</li>
+            </ul>
+          </article>
+          <article class="outil-carte">
+            <div class="outil-icone" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+            <h3>Visual Studio Code</h3>
+            <p>IDE moderne et rapide, adapté aux projets web, avec extensions, terminal intégré et outils de productivité avancés.</p>
+            <ul class="outil-details">
+              <li><strong>Configuration :</strong> linting, snippets, gestionnaire de tâches et formatage automatique.</li>
+              <li><strong>Confort :</strong> recherche intelligente, multi-onglets et intégration Git native.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section" aria-label="Mes projets">
+      <div class="container">
+        <h2 class="section-titre">Projets</h2>
+        <p class="section-sous-titre">Ce que je suis en train de construire</p>
+        <div class="ligne-accent"></div>
+        <div class="projets-grille">
+
+          <article class="projet-carte">
+            <div class="projet-image" aria-hidden="true">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span class="projet-tag">En cours</span>
+            </div>
+            <div class="projet-corps">
+              <h3 class="projet-titre">Portfolio Personnel</h3>
+              <p class="projet-description">Ce portfolio professionnel. Conception et développement de zéro avec HTML5, CSS3 et JavaScript vanilla pour une expérience utilisateur optimale.</p>
+              <ul class="projet-technologies" aria-label="Technologies utilisées">
+                <li class="tech-badge">HTML5</li>
+                <li class="tech-badge">CSS3</li>
+                <li class="tech-badge">JavaScript</li>
+              </ul>
+              <div class="projet-liens">
+                <a href="https://github.com/samakeamadou2006" target="_blank" rel="noopener" class="projet-lien"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projet-carte">
+            <div class="projet-image" aria-hidden="true">
+              <img src="meteo-preview.svg" alt="Aperçu de l'application météo" class="projet-vignette">
+              <span class="projet-tag">Publié</span>
+            </div>
+            <div class="projet-corps">
+              <h3 class="projet-titre">Application Météo</h3>
+              <p class="projet-description">Application météo en temps réel affichant les conditions actuelles et prévisions. Intégration API REST, interface responsive et présentation claire des données climatiques.</p>
+              <ul class="projet-technologies" aria-label="Technologies utilisées">
+                <li class="tech-badge">HTML5</li>
+                <li class="tech-badge">CSS3</li>
+                <li class="tech-badge">JavaScript</li>
+                <li class="tech-badge">API</li>
+              </ul>
+              <div class="projet-liens">
+                <a href="https://github.com/samakeamadou2006/Meteo" target="_blank" rel="noopener" class="projet-lien"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                <a href="https://samakeamadou2006.github.io/Meteo/" target="_blank" rel="noopener" class="projet-lien"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Démo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projet-carte">
+            <div class="projet-image" aria-hidden="true">
+              <img src="calculatrice.uvci.logo.png" alt="Logo de la Calculatrice UVCI" class="projet-vignette projet-logo">
+              <span class="projet-tag">Publié</span>
+            </div>
+            <div class="projet-corps">
+              <h3 class="projet-titre">Calculatrice UVCI</h3>
+              <p class="projet-description">Calculatrice web fonctionnelle pour opérations mathématiques. Interface utilisateur intuitive avec design responsive et logique JavaScript optimisée pour une navigation fluide.</p>
+              <ul class="projet-technologies" aria-label="Technologies utilisées">
+                <li class="tech-badge">HTML5</li>
+                <li class="tech-badge">CSS3</li>
+                <li class="tech-badge">JavaScript</li>
+              </ul>
+              <div class="projet-liens">
+                <a href="https://github.com/samakeamadou2006/Calculatrice-UVCI" target="_blank" rel="noopener" class="projet-lien"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                <a href="https://samakeamadou2006.github.io/Calculatrice-UVCI/" target="_blank" rel="noopener" class="projet-lien"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Démo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-label="Contactez-moi">
+      <div class="container">
+        <h2 class="section-titre">Contact</h2>
+        <p class="section-sous-titre">Discutons de votre projet</p>
+        <div class="ligne-accent"></div>
+        <div class="contact-grille">
+          <div class="contact-info">
+            <h3>Travaillons ensemble</h3>
+            <p>Disponible pour des stages, des projets collaboratifs ou simplement pour échanger sur le développement web.</p>
+            <nav class="contact-reseaux" aria-label="Réseaux sociaux">
+              <a href="https://wa.me/2250565487168" target="_blank" rel="noopener" class="reseau-lien">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+              </a>
+              <a href="https://github.com/samakeamadou2006" target="_blank" rel="noopener" class="reseau-lien">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/amadou-samake-0ab4243b7" target="_blank" rel="noopener" class="reseau-lien">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+              </a>
+              <a href="mailto:samakeamadou2006@gmail.com" class="reseau-lien">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email
+              </a>
+            </nav>
+          </div>
+          <form class="formulaire" id="formulaire-contact" novalidate>
+            <div class="champ-groupe">
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+            </div>
+            <div class="champ-groupe">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required />
+            </div>
+            <div class="champ-groupe">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primaire">
+              Envoyer le message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 <span>Samaké Amadou</span> — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS (Animations) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Fichier JS externe — toujours en bas du body -->
+  <script src="script.js"></script>
+
+</body>
+</html>
